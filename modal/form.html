@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+        .rakip{
+            position: absolute;
+            left: 20%;
+            top: 20%;
+            border: 2px solid black;
+            padding: 50px  100px;
+            margin: 20px 50px;
+            background: transparent;
+            backdrop-filter: blur(15px);
+            background-color: rgb(190, 58, 58);
+            border-radius: 15px;
+            display: block;
+        }
+        .rakip h2{
+            text-align: center;
+            font-size: 30px;
+            color: chartreuse;
+        }
+       .rakip .form-control{
+            color: blue;
+            padding: 9px;
+            border: 2px solid red;
+            border-radius: 10px;
+            margin: 10px;
+        }
+        
+        .form-control::placeholder{
+           color: blue;
+       }
+       .rakip p{
+        color: rgb(54, 8, 217);
+        font-size: 18px;
+        font-weight: 800;
+        text-align: center;
+       }
+       .rakip p a{
+        color: black;
+        font-size: 17px;
+       }
+       .rakip .btn{
+        position: absolute;
+        top: 88%;
+        left: 58%;
+        color: black;
+        background-color: white;
+        font-size: 18px;
+        font-weight: 700;
+        border: 2px solid black;
+        border-radius: 15px 2px 4px 5px;
+       }
+       .btn:hover{
+        border: 2px solid white;
+        cursor: pointer;
+       }
+        
+       .rakip .button{
+        position: absolute;
+        top: 88%;
+        left: 70%;
+        color: black;
+        background-color: white;
+        font-size: 18px;
+        font-weight: 700;
+        border: 2px solid white;
+        border-radius: 15px 2px 4px 5px;
+       }
+       .button:hover{
+        border: 2px solid black;
+        cursor: pointer;
+       }
+    </style>
+</head>
+
+<body>
+    <div class="rakip">
+        <div class="container">
+            <div class="row">
+                <h2>Basic Form</h2>
+                <form action="">
+                <div class="col-sm-4">
+                    <label for="name"><b>Name</b></label>
+                    <input type="text" class="form-control" name="name" placeholder="name" required>
+                    <label for="last"><b>Last Name</b></label>
+                    <input type="text" class="form-control" last="last" placeholder="last name" required>
+                </div>
+                <div class="col-sm-4">
+                    <label for="Email"><b>Email</b></label>
+                    <input type="text" class="form-control" email="Email" placeholder="Email" required>
+                    <label for="password"><b>Password</b></label>
+                    <input type="password" class="form-control" password="password" placeholder="Password" required>
+                </div>
+                <div class="col-sm-4">
+                    <label for="adress"><b>Adress</b></label>
+                    <input type="text" class="form-control" email="adress" placeholder="adress" required>
+                    <label for="Number"><b>Number</b></label>
+                    <input type="number" class="form-control" number="Number" placeholder="Number" required>
+                </div>
+                <div class="col-sm-4">
+                    <label><input type="checkbox"><b>Remember Me</b></label>
+                </div>
+                <div class="col-sm-4">
+                    <p><b>Dont have any account?</b><a href="#">Register</a></p>
+                </div>
+                <div class="col-sm-4">
+                    <button class="btn">Cancel</button>
+                    <button class="button">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+</body>
+
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            grid-template-columns: auto;
+            background-color: cornflowerblue;
+        }
+
+        .rakib {
+            width: 350px;
+            height: 259px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border: 2px solid white;
+            background-color: cadetblue;
+            backdrop-filter: blur(20px);
+            padding: 35px 35px 20px 50px;
+            margin: 10px;
+
+        }
+
+        .form-control {
+            background-color: brown;
+            color: black;
+            padding: 5px;
+            margin: 10px;
+            border-radius: 15px 10px 5px;
+
+        }
+
+        .form-control::placeholder {
+            text-align: center;
+            color: aliceblue;
+        }
+
+        .rakib .btn {
+            width: 80%;
+            background-color: greenyellow;
+            border: 2px solid greenyellow;
+            font-size: 20px;
+            font-weight: 500;
+            border-radius: 10px;
+
+        }
+
+        .rakib h4 {
+            color: darkblue;
+            font-size: 15px;
+            font-weight: bold;
+        }
+        .rakib .button{
+            background-color: cornflowerblue;
+            position: relative;
+            left: 20%;
+            font-size: 17x;
+            font-weight: bold;
+        }
+        .rakib .forgot-password-btn{
+            color: aqua;
+        }
+        .view-sign-up-button{
+            color: aliceblue;
+            font-size: 17px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="rakib">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <form action="">
+                        <label for="email"><b>Email</b></label>
+                        <input type="text" class="form-control" email="email" placeholder="email" required>
+                </div>
+                <div class="col-sm-4">
+                    <label for="pass"><b>Password</b></label>
+                    <input type="password" class="form-control" password="pass" placeholder="password" required>
+                </div>
+                <div class="col-sm-4">
+                    <button type="login" class="btn">Log in</button>
+                </div>
+                <div class="col-sm-4">
+                    <h4>or,you can login with:</h4>
+                </div>
+                <div class="col-sm-4">
+                    <button type="facebook" class="button">FACEBOOK</button>
+                    <button type="linkkedin" class="button">LiNKEDIN</button>
+                </div>
+                <div class="col-sm-4">
+                    <p>
+                        <span class='forgot-password-btn cursor'>Forgot password?</span>
+                        &nbsp; &nbsp;
+                        <a class="view-sign-up-button" href="#">No account? Sign up.</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </form>
+</body>
+
+</html>
